@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,800;1,600&display=swap');
+ 
+ *{
+    background-color: #222222;
+    margin: 0 px;
+    padding: 0 px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+ }
+
+ .banner video{
+    position:absolute;
+   width: 100%;
+   height: 100vh;
+   right:0;
+   top:0;
+   object-fit: cover;
+   opacity: 0.1;
+   
+}
+
+ .navbar {
+    height: 10px;
+ }
+
+ .home {
+    font-size: 0.5cm;
+    height: 80vh;
+    width: 97%;
+    margin:0vh 1vh;
+    padding:2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+
+ }
+ 
+ .home h1 {
+    text-align: left;
+    background: transparent;
+ }
+
+ .home h2{
+    background:transparent;
+ }
+ 
+ .home p {
+    text-align: justify;
+    background: transparent;
+ }
+
+ .navbar {
+    width: 90%;
+    display: flex;
+    margin: 0%;
+    padding: 35px 60px;
+    align-items: center;
+    justify-content: right;
+ }
+
+.navbar ul li {
+   list-style: none;
+   display: inline;
+   margin: 0px 10px;
+}
+
+.navbar ul li a {
+   text-decoration: none;
+   text-transform: uppercase;
+   position: relative;
+}
+
+.navbar ul li ::after {
+   content: "";
+   width: 0;
+   height: 4px;
+   position: absolute;
+   background: #CCFF33;
+   left: 0;
+   bottom: -8px;
+}
+
+.navbar ul li :hover::after {
+   width: 100%;
+   transition: 0.5s;
+}
