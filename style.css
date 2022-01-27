@@ -8,13 +8,13 @@
     box-sizing: border-box;
  }
 
-body {
+ body {
     background-color: #222222;
  }
 
- body > div{
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+ body > div {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
  }
  .banner video{
     position:absolute;
@@ -75,7 +75,7 @@ body {
 .navbar ul li ::after {
    content: "";
    width: 0;
-   line-height: 4px;
+   height: 4px;
    position: absolute;
    background: #CCFF33;
    left: 0;
@@ -102,12 +102,13 @@ body {
    height: 140vh;
 }
 
-.left_tip, .right_tip {
+.measures div {
    display: flex;
    height: 30vh;
    width: 70%;
    border: 3px solid #CCFF33;
    align-items: center;
+   justify-content: space-between;
    background-color: #ff7b00;
    
 }
@@ -176,10 +177,6 @@ body {
    align-self:center;
 }
 
-.Links ul {
-   
-}
-
 .Links iframe {
    display: flex;
    align-self:center;
@@ -190,7 +187,8 @@ footer {
    height: 25%;
    display: flex;
    align-items:center;
-   justify-content: space-evenly;
+   justify-content: space-between;
+   padding: 0 13% 0 13%;
    font-size: 25px;
    text-transform: uppercase;
 }
